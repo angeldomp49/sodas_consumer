@@ -57,7 +57,15 @@ export const TableBody = (props: {items: Soda[], activeButtons: RestButtons}) =>
 
 export const Row = (props: {item: Soda, activeButtons: RestButtons}) => {
 
-    
+    let properties = [
+        "id", 
+        "marca"
+    ];
+
+    let codeHtml = properties.map((property: string) => {
+        let f = property;
+        console.log(props.item[property]);
+    };
 
     return (
         <tr key={Id.generate()}>
