@@ -4,7 +4,7 @@ export type Soda = Readonly<{
     sabor: string,
     descripcion: string,
     familia: Familia,
-    tiendas: Tienda[]
+    tiendas?: Tienda[]
 }>;
 
 export type Familia = Readonly<{
@@ -15,7 +15,7 @@ export type Familia = Readonly<{
 export type Tienda = Readonly <{
     id: number,
     nombre: string,
-    sodas: Soda[]
+    sodas?: Soda[]
 }>;
 
 export type RestButtons = Readonly <{
